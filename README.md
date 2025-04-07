@@ -35,7 +35,7 @@ Want to translate this extension to your language? Just visit [translatewiki.net
 
 2) After setting up the Webhook you will get a Webhook URL. Copy that URL as you will need it in step 4.
 
-3) [Download the latest release of this extension](https://github.com/miraheze/DiscordNotifications/archive/master.zip), uncompress the archive, and move folder `DiscordNotifications` into your `mediawiki_installation/extensions` folder. (And instead of manually downloading the latest version, you could also just git clone this repository to that same extensions folder).
+3) [Download the latest release of this extension](https://github.com/miraheze/DiscordNotifications/archive/main.zip), uncompress the archive, and move folder `DiscordNotifications` into your `mediawiki_installation/extensions` folder. (And instead of manually downloading the latest version, you could also just git clone this repository to that same extensions folder).
 
 4) Add the settings listed below in your `localSettings.php`. Note that it is mandatory to set these settings for this extension to work:
 
