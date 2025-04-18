@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro"
+		]
+	},
+	"discordnotifications-block": "अवरोधित करें",
+	"discordnotifications-groups": "समूह",
+	"discordnotifications-talk": "वार्ता",
+	"discordnotifications-edit": "सम्पादन",
+	"discordnotifications-delete": "हटाएँ",
+	"discordnotifications-history": "इतिहास",
+	"discordnotifications-diff": "अंतर",
+	"discordnotifications-article-saved-edit": "संपादित",
+	"discordnotifications-file-namespace": "फ़ाइल",
+	"discordnotifications-summary": "सारांश: $1",
+	"discordnotifications-content": "सामग्री:",
+	"discordnotifications-flow-moderate-hide": "छिपा हुआ",
+	"discordnotifications-flow-moderate-delete": "हटाए गए"
+}
