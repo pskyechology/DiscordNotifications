@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"ToJack"
+			"ToJack",
+			"Vashgird"
 		]
 	},
 	"discordnotifications-block": "баста",
 	"discordnotifications-groups": "гурӯҳҳо",
 	"discordnotifications-talk": "баҳс",
 	"discordnotifications-contribs": "саҳмгузориҳо",
-	"discordnotifications-edit": "Вироиш",
+	"discordnotifications-edit": "вироиш",
 	"discordnotifications-delete": "ҳазф",
 	"discordnotifications-history": "таърих",
 	"discordnotifications-diff": "фарқ",
