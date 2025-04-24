@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"discordnotifications-block": "ਪਾਬੰਦੀ",
+	"discordnotifications-groups": "ਟੋਲੀਆਂ",
+	"discordnotifications-talk": "ਗੱਲ-ਬਾਤ",
+	"discordnotifications-contribs": "ਯੋਗਦਾਨ",
+	"discordnotifications-centralauth": "ਕੇਂਦਰੀ-ਤਸਦੀਕ",
+	"discordnotifications-edit": "ਸੋਧੋ",
+	"discordnotifications-delete": "ਮਿਟਾਓ",
+	"discordnotifications-history": "ਇਤਿਹਾਸ",
+	"discordnotifications-diff": "ਫ਼ਰਕ",
+	"discordnotifications-article-saved-minor-edits": "ਵਿੱਚ ਛੋਟੀ ਸੋਧ ਕੀਤੀ ਗਈ",
+	"discordnotifications-article-saved-edit": "ਸੋਧਿਆ ਗਿਆ",
+	"discordnotifications-article-protected-change": "ਦੀ ਸੁਰੱਖਿਆ ਬਦਲ ਗਈ ਏ",
+	"discordnotifications-article-protected-remove": "ਦੀ ਸੁਰੱਖਿਆ ਹਟਾ ਦਿੱਤੀ ਗਈ ਏ",
+	"discordnotifications-new-user": "👥 ਨਵਾਂ ਵਰਤੋਂਕਾਰ ਖਾਤਾ $1 ਹੁਣੇ ਬਣਾਇਆ ਗਿਆ ਹੈ $2",
+	"discordnotifications-block-user-reason": "ਤਰਕ ਨਾਲ",
+	"discordnotifications-block-user-list": "ਸਾਰੀਆਂ ਪਾਬੰਦੀਆਂ ਦੀ ਸੂਚੀ",
+	"discordnotifications-summary": "ਸਾਰ: $1",
+	"discordnotifications-content": "ਸਮੱਗਰੀ:",
+	"discordnotifications-flow-lock-topic-lock": "ਹੱਲ-ਕੱਢਿਆ ਗਿਆ",
+	"discordnotifications-flow-lock-topic-unlock": "ਮੁੜ-ਖੋਲ੍ਹਿਆ",
+	"discordnotifications-flow-moderate-hide": "ਲੁਕਵਾਂ",
+	"discordnotifications-flow-moderate-suppress": "ਦਬਾਇਆ ਗਿਆ",
+	"discordnotifications-flow-moderate-delete": "ਮਿਟਾਇਆ ਗਿਆ"
+}

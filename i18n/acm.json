@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmedadeljaff"
+			"Ahmedadeljaff",
+			"Kirkukturk3"
 		]
 	},
 	"discordnotifications-block": "بلوك",
@@ -10,12 +11,12 @@
 	"discordnotifications-article-saved-edit": "مُعَدَّل",
 	"discordnotifications-file-namespace": "ملف",
 	"discordnotifications-article-protected": "يحتوي $1 على $2 مقال $3. السبب: $4",
-	"discordnotifications-article-protected-change": "غير الحمايه",
-	"discordnotifications-article-protected-remove": "أحذف الحماية من",
-	"discordnotifications-file-uploaded": " $1 قد رفع الملف <$2|$3> (الصيغة: $4، الحجم: $5 $6، الملخص: $7)",
-	"discordnotifications-change-user-groups-with-old": "$1 قد غير مجموعات المستخدمين لـ$2، المجموعات القديمة: $3، المجموعات الجديدة: $4",
-	"discordnotifications-flow-edit-post": " $1 قد عدل منشوراً في $2",
-	"discordnotifications-flow-edit-topic-summary": " $1 قد عدل على ملخص الموضوع في $2",
+	"discordnotifications-article-protected-change": "غيرت حماية",
+	"discordnotifications-article-protected-remove": "حذفت الحماية من",
+	"discordnotifications-file-uploaded": " $1 نزل ملف <$2|$3> (الصيغة: $4، الحجم: $5 $6، الملخص: $7)",
+	"discordnotifications-change-user-groups-with-old": "$1 غير مجموعات المستخدمين لـ$2، المجموعات القديمة: $3، المجموعات الجديدة: $4",
+	"discordnotifications-flow-edit-post": " $1 عدل پوست على $2",
+	"discordnotifications-flow-edit-topic-summary": " $1 عدل على ملخص الموضوع في $2",
 	"discordnotifications-flow-lock-topic-unlock": "رجع فتحه",
 	"discordnotifications-flow-moderate-delete": "محذوف",
 	"discordnotifications-flow-moderate-undelete": "مسترجع",

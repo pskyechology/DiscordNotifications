@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"discordnotifications-block": "پابندی لاؤ",
+	"discordnotifications-groups": "گروپس",
+	"discordnotifications-talk": "ڳالھ مہاڑ",
+	"discordnotifications-edit": "تبدیلی کرو",
+	"discordnotifications-delete": "مٹاؤ",
+	"discordnotifications-history": "تاریخچہ",
+	"discordnotifications-diff": "فرق",
+	"discordnotifications-file-namespace": "فائل",
+	"discordnotifications-block-user-reason": "وجہ نال",
+	"discordnotifications-content": "شامل حصے:",
+	"discordnotifications-flow-lock-topic-lock": "حل تھی ڳیا",
+	"discordnotifications-flow-moderate-hide": "پوشیدہ",
+	"discordnotifications-flow-moderate-suppress": "دبیج ڳیا",
+	"discordnotifications-flow-moderate-delete": "مٹا ݙتے"
+}
