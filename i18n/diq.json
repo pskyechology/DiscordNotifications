@@ -18,8 +18,10 @@
 	"discordnotifications-article-protected-change": "sıtarnayışê cı vurriya",
 	"discordnotifications-block-user-reason": "ebe sebeb ra",
 	"discordnotifications-summary": "Xulasa: $1",
+	"discordnotifications-content": "Zerrek:",
 	"discordnotifications-flow-lock-topic-lock": "agoziya",
 	"discordnotifications-flow-moderate-hide": "nımıte",
+	"discordnotifications-flow-moderate-unhide": "menımne",
 	"discordnotifications-flow-moderate-suppress": "pawiyaye",
 	"discordnotifications-flow-moderate-delete": "esteriya"
 }
