@@ -46,5 +46,6 @@
 	"discordnotifications-flow-moderate-delete": "izbrisao/la",
 	"discordnotifications-flow-moderate-undelete": "vratio/la",
 	"discordnotifications-flow-new-topic": "💬 $1 je napravio/la temu *$2* na $3",
-	"discordnotifications-flow-reply": "💬 $1 je odgovorio/la u $2"
+	"discordnotifications-flow-reply": "💬 $1 je odgovorio/la u $2",
+	"discordnotifications-import-complete": "⤵️ Članak $1 je uvezen."
 }
