@@ -34,6 +34,7 @@ use MediaWiki\User\Hook\UserGroupsChangedHook;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityValue;
+use MediaWiki\Moderation\Hook\ModerationPendingHook;
 use TextSlotDiffRenderer;
 use Wikimedia\IPUtils;
 
@@ -537,6 +538,32 @@ class Hooks implements
 		);
 
 		$this->discordNotifier->notify( $message, $user, 'user_groups_changed' );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function onModerationPending(array $fields, $modid) {
+		if ( !$this->config->get( 'DiscordNotificationModerationPending' ) ) {
+			return;
+		}
+
+		$user = $this->userFactory->newFromId( $fields['mod_user'] );
+		$pageTitle = $this->titleFactory->newFromText( $fields['mod_title'] );
+		$moderationURL = $this->titleFactory->newFromText( 'Special:Moderation' )->getFullURL();
+
+		$previewLinkEnabled = RequestContext::getMain()->getConfig()->get( 'ModerationPreviewLink' );
+
+		$message = $this->discordNotifier->getMessage( 'discordnotifications-moderation-pending',
+			$this->discordNotifier->getDiscordUserText( $user ),
+			$this->discordNotifier->getDiscordModerationTitleText( $pageTitle, $modid, $previewLinkEnabled ),
+			$moderationURL
+		);
+
+		$message .= ' (' . $this->discordNotifier->getMessage( 'discordnotifications-bytes',
+			sprintf( '%+d', $fields['mod_new_len'] - $fields['mod_old_len'] ) ) . ')';
+		
+		$this->discordNotifier->notify($message, $user, 'moderation_pending');
 	}
 
 	/**
