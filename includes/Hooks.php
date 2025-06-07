@@ -552,7 +552,7 @@ class Hooks implements
 		$pageTitle = $this->titleFactory->newFromText( $fields['mod_title'] );
 		$moderationURL = $this->titleFactory->newFromText( 'Special:Moderation' )->getFullURL();
 
-		$previewLinkEnabled = RequestContext::getMain()->getConfig()->get( 'ModerationPreviewLink' );
+		$previewLinkEnabled = $this->config->get( 'ModerationPreviewLink' );
 
 		$message = $this->discordNotifier->getMessage( 'discordnotifications-moderation-pending',
 			$this->discordNotifier->getDiscordUserText( $user ),
