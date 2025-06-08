@@ -103,7 +103,7 @@ class DiscordNotifier {
 		$message = str_replace( [ "\r", "\n" ], '', $message );
 
 		$color = match ( $action ) {
-			'article_saved', 'flow', 'import_complete', 'user_groups_changed' => '2993970',
+			'article_saved', 'flow', 'import_complete', 'user_groups_changed', 'moderation_pending' => '2993970',
 			'article_inserted', 'file_uploaded', 'new_user_account' => '3580392',
 			'article_deleted', 'user_blocked' => '15217973',
 			'article_moved' => '14038504',
@@ -352,6 +352,36 @@ class DiscordNotifier {
 				$delete_url,
 				$this->getMessage( 'discordnotifications-history' ),
 				$history_url
+			);
+		} else {
+			return sprintf( '[%s](%s)', $title_display, $article_url );
+		}
+	}
+
+	/**
+	 * Gets nice HTML text for title object containing the link to article page
+	 * and also into diff and preview (if enabled) page.
+	 *
+	 * @param Title $title
+	 * @param int $modid
+	 * @param bool $previewLinkEnabled corresponds to $wgModerationPreviewLink
+	 * @return string
+	 */
+	public function getDiscordModerationTitleText( Title $title, int $modid, bool $previewLinkEnabled ): string {
+		$title_display = $title->getFullText();
+		$article_url = $title->getFullURL();
+		$moderation_title = Title::newFromText( 'Special:Moderation' );
+		if ( $this->options->get( 'DiscordIncludePageUrls' ) ) {
+			$diff_url = $moderation_title->getFullURL( [ 'modaction' => 'show', 'modid' => $modid ] );
+			$preview_url = $moderation_title->getFullURL( [ 'modaction' => 'preview', 'modid' => $modid ] );
+
+			return sprintf(
+				'[%s](%s) ([%s](%s)%s)',
+				$title_display,
+				$article_url,
+				$this->getMessage( 'discordnotifications-diff' ),
+				$diff_url,
+				$previewLinkEnabled ? sprintf( ' | [%s](%s)', $this->getMessage( 'discordnotifications-preview' ), $preview_url ) : ''
 			);
 		} else {
 			return sprintf( '[%s](%s)', $title_display, $article_url );

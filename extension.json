@@ -65,6 +65,9 @@
 		},
 		"PageSaveComplete": {
 			"handler": "main"
+		},
+		"ModerationPending": {
+			"handler": "main"
 		}
 	},
 	"config": {
@@ -174,6 +177,9 @@
 			"value": true
 		},
 		"DiscordNotificationIncludeAutocreatedUsers": {
+			"value": true
+		},
+		"DiscordNotificationModerationPending": {
 			"value": true
 		},
 		"DiscordIncludeDiffSize": {

@@ -16,6 +16,7 @@
 	"discordnotifications-delete": "delete",
 	"discordnotifications-history": "history",
 	"discordnotifications-diff": "diff",
+	"discordnotifications-preview": "preview",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
 	"discordnotifications-article-saved": "📝 $1 has $2 article $3 $4",
 	"discordnotifications-article-saved-minor-edits": "made minor edit to",
@@ -55,5 +56,6 @@
 	"discordnotifications-flow-moderate-undelete": "undeleted",
 	"discordnotifications-flow-new-topic": "💬 $1 has created topic $2 on $3",
 	"discordnotifications-flow-reply": "💬 $1 has replied in $2",
-	"discordnotifications-import-complete": "⤵️ Article $1 has been imported."
+	"discordnotifications-import-complete": "⤵️ Article $1 has been imported.",
+	"discordnotifications-moderation-pending": "🔍 $1 has submitted an edit for $2 to the [moderation queue]($3)."
 }

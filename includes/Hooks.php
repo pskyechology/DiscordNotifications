@@ -540,6 +540,32 @@ class Hooks implements
 	}
 
 	/**
+	 * @inheritDoc
+	 */
+	public function onModerationPending( array $fields, $modid ) {
+		if ( !$this->config->get( 'DiscordNotificationModerationPending' ) ) {
+			return;
+		}
+
+		$user = $this->userFactory->newFromId( $fields['mod_user'] );
+		$pageTitle = $this->titleFactory->newFromTextThrow( $fields['mod_title'] );
+		$moderationURL = $this->titleFactory->newFromText( 'Special:Moderation' )->getFullURL();
+
+		$previewLinkEnabled = $this->config->get( 'ModerationPreviewLink' );
+
+		$message = $this->discordNotifier->getMessage( 'discordnotifications-moderation-pending',
+			$this->discordNotifier->getDiscordUserText( $user ),
+			$this->discordNotifier->getDiscordModerationTitleText( $pageTitle, $modid, $previewLinkEnabled ),
+			$moderationURL
+		);
+
+		$message .= ' (' . $this->discordNotifier->getMessage( 'discordnotifications-bytes',
+			sprintf( '%+d', $fields['mod_new_len'] - $fields['mod_old_len'] ) ) . ')';
+
+		$this->discordNotifier->notify( $message, $user, 'moderation_pending' );
+	}
+
+	/**
 	 * @param APIBase $module
 	 */
 	public function onAPIFlowAfterExecute( APIBase $module ) {
