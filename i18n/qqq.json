@@ -18,6 +18,7 @@
 	"discordnotifications-delete": "Used as link text of the button.\n\n{{Identical|Delete}}",
 	"discordnotifications-history": "Used as link text of the button.",
 	"discordnotifications-diff": "Used as link text of the button.",
+	"discordnotifications-preview": "Used as link text of the button.",
 	"discordnotifications-bytes": "Unit for size of a file",
 	"discordnotifications-article-saved": "A notification text for when a user edits a page\n\nParameters:\n* $1 - the username\n* $2 - action\n* $3 - article\n* $4 - summary",
 	"discordnotifications-article-saved-minor-edits": "Clause of minor edit",
@@ -55,5 +56,6 @@
 	"discordnotifications-flow-moderate-delete": "Clause of deleting a topic",
 	"discordnotifications-flow-moderate-undelete": "Clause of undeleting a topic",
 	"discordnotifications-flow-new-topic": "A notification text for when a user creates a now flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic\n* $3 - talk page",
-	"discordnotifications-flow-reply": "A notification text for when a user replies in a flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic"
+	"discordnotifications-flow-reply": "A notification text for when a user replies in a flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic",
+	"discordnotifications-moderation-pending": "A notification text for when a user submits an edit to the moderation queue\n\nParameters:\n* $1 - the username\n* $2 - page\n* $3 - link to the moderation queue"
 }
