@@ -34,7 +34,6 @@ use MediaWiki\User\Hook\UserGroupsChangedHook;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityValue;
-use MediaWiki\Moderation\Hook\ModerationPendingHook;
 use TextSlotDiffRenderer;
 use Wikimedia\IPUtils;
 
@@ -543,7 +542,7 @@ class Hooks implements
 	/**
 	 * @inheritDoc
 	 */
-	public function onModerationPending(array $fields, $modid) {
+	public function onModerationPending( array $fields, $modid ) {
 		if ( !$this->config->get( 'DiscordNotificationModerationPending' ) ) {
 			return;
 		}
@@ -562,8 +561,8 @@ class Hooks implements
 
 		$message .= ' (' . $this->discordNotifier->getMessage( 'discordnotifications-bytes',
 			sprintf( '%+d', $fields['mod_new_len'] - $fields['mod_old_len'] ) ) . ')';
-		
-		$this->discordNotifier->notify($message, $user, 'moderation_pending');
+
+		$this->discordNotifier->notify( $message, $user, 'moderation_pending' );
 	}
 
 	/**

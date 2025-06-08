@@ -372,8 +372,8 @@ class DiscordNotifier {
 		$article_url = $title->getFullURL();
 		$moderation_title = Title::newFromText( 'Special:Moderation' );
 		if ( $this->options->get( 'DiscordIncludePageUrls' ) ) {
-			$diff_url = $moderation_title->getFullURL( ['modaction' => 'show', 'modid' => $modid] );
-			$preview_url = $moderation_title->getFullURL( ['modaction' => 'preview', 'modid' => $modid] );
+			$diff_url = $moderation_title->getFullURL( [ 'modaction' => 'show', 'modid' => $modid ] );
+			$preview_url = $moderation_title->getFullURL( [ 'modaction' => 'preview', 'modid' => $modid ] );
 
 			return sprintf(
 				'[%s](%s) ([%s](%s)%s)',
@@ -381,7 +381,7 @@ class DiscordNotifier {
 				$article_url,
 				$this->getMessage( 'discordnotifications-diff' ),
 				$diff_url,
-				$previewLinkEnabled ? sprintf(' | [%s](%s)', $this->getMessage( 'discordnotifications-preview' ), $preview_url) : ''
+				$previewLinkEnabled ? sprintf( ' | [%s](%s)', $this->getMessage( 'discordnotifications-preview' ), $preview_url ) : ''
 			);
 		} else {
 			return sprintf( '[%s](%s)', $title_display, $article_url );
