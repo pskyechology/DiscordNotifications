@@ -549,7 +549,7 @@ class Hooks implements
 		}
 
 		$user = $this->userFactory->newFromId( $fields['mod_user'] );
-		$pageTitle = $this->titleFactory->newFromText( $fields['mod_title'] );
+		$pageTitle = $this->titleFactory->newFromTextThrow( $fields['mod_title'] );
 		$moderationURL = $this->titleFactory->newFromText( 'Special:Moderation' )->getFullURL();
 
 		$previewLinkEnabled = $this->config->get( 'ModerationPreviewLink' );
