@@ -4,6 +4,7 @@
 			"Aaribaud",
 			"Eihel",
 			"Gomoko",
+			"JLTRY",
 			"Linedwell",
 			"Thibaut120094",
 			"Verdy p",
@@ -21,6 +22,7 @@
 	"discordnotifications-delete": "suppression",
 	"discordnotifications-history": "historique",
 	"discordnotifications-diff": "diff",
+	"discordnotifications-preview": "Aperçu",
 	"discordnotifications-bytes": "$1 octet{{PLURAL:$1||s}}",
 	"discordnotifications-article-saved": "📝 $1 a $2 l’article « $3 ». $4",
 	"discordnotifications-article-saved-minor-edits": "effectué une modification mineure de",
@@ -60,5 +62,6 @@
 	"discordnotifications-flow-moderate-undelete": "restauré",
 	"discordnotifications-flow-new-topic": "💬 $1 a créé le sujet $2 sur $3",
 	"discordnotifications-flow-reply": "💬 $1 a répondu dans $2",
-	"discordnotifications-import-complete": "⤵️ L’article « $1 » a été importé."
+	"discordnotifications-import-complete": "⤵️ L’article « $1 » a été importé.",
+	"discordnotifications-moderation-pending": "🔍 $1 a soumis une modification pour $2 à la [file d'attente de modération]($3)."
 }

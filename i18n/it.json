@@ -13,6 +13,7 @@
 	"discordnotifications-delete": "cancella",
 	"discordnotifications-history": "cronologia",
 	"discordnotifications-diff": "diff",
+	"discordnotifications-preview": "anteprima",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte}}",
 	"discordnotifications-article-saved": "📝 $1 ha $2 la voce $3 $4",
 	"discordnotifications-article-saved-edit": "modificato",
