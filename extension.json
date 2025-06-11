@@ -39,6 +39,9 @@
 		"PageDeleteComplete": {
 			"handler": "main"
 		},
+		"PageUndeleteComplete": {
+			"handler": "main"
+		},
 		"PageMoveComplete": {
 			"handler": "main"
 		},
@@ -150,6 +153,9 @@
 			"value": true
 		},
 		"DiscordNotificationRemovedArticle": {
+			"value": true
+		},
+		"DiscordNotificationUnremovedArticle": {
 			"value": true
 		},
 		"DiscordNotificationMovedArticle": {
