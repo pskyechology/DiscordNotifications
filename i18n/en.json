@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aleksi Postari",
+			"Asko",
 			"Universal Omega"
 		]
 	},
@@ -24,6 +25,7 @@
 	"discordnotifications-article-created": "📄 $1 has created article $2 $3",
 	"discordnotifications-file-namespace": "File",
 	"discordnotifications-article-deleted": "❌ $1 has deleted article $2 Reason: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 has undeleted article $2 Reason: $3",
 	"discordnotifications-article-moved": "➡ $1 has moved article $2 to $3. Reason: $4",
 	"discordnotifications-article-protected": "🔒 $1 has $2 article $3. Reason: $4",
 	"discordnotifications-article-protected-change": "changed protection of",

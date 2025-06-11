@@ -20,6 +20,7 @@ use MediaWiki\Hook\UploadCompleteHook;
 use MediaWiki\MainConfigNames;
 use MediaWiki\Page\Hook\ArticleProtectCompleteHook;
 use MediaWiki\Page\Hook\PageDeleteCompleteHook;
+use MediaWiki\Page\Hook\PageUndeleteCompleteHook;
 use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Permissions\Authority;
@@ -43,6 +44,7 @@ class Hooks implements
 	BlockIpCompleteHook,
 	LocalUserCreatedHook,
 	PageDeleteCompleteHook,
+	PageUndeleteCompleteHook,
 	PageMoveCompleteHook,
 	PageSaveCompleteHook,
 	UploadCompleteHook,
@@ -304,6 +306,25 @@ class Hooks implements
 		);
 
 		$this->discordNotifier->notify( $message, $deleter->getUser(), 'article_deleted', [], null, $wikiPage->getTitle() );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function onPageUndeleteComplete(	ProperPageIdentity $page, Authority $restorer, string $reason, RevisionRecord $restoredRev, ManualLogEntry $logEntry, int $restoredRevisionCount, bool $created, array $restoredPageIds ): void {
+		if ( !$this->config->get( 'DiscordNotificationUnremovedArticle' ) ) {
+			return;
+		}
+
+		$wikiPage = $this->wikiPageFactory->newFromTitle( $page );
+
+		$message = $this->discordNotifier->getMessageWithPlaintextParams( 'discordnotifications-article-undeleted',
+			$this->discordNotifier->getDiscordUserText( $restorer->getUser() ),
+			$this->discordNotifier->getDiscordArticleText( $wikiPage ),
+			$reason
+		);
+
+		$this->discordNotifier->notify( $message, $restorer->getUser(), 'article_undeleted', [], null, $wikiPage->getTitle() );
 	}
 
 	/**

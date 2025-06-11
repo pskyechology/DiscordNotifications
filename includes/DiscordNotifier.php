@@ -106,6 +106,7 @@ class DiscordNotifier {
 			'article_saved', 'flow', 'import_complete', 'user_groups_changed', 'moderation_pending' => '2993970',
 			'article_inserted', 'file_uploaded', 'new_user_account' => '3580392',
 			'article_deleted', 'user_blocked' => '15217973',
+			'article_undeleted' => '15263797',
 			'article_moved' => '14038504',
 			'article_protected' => '3493864',
 			default => '11777212',

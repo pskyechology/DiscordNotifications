@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Amire80",
+			"Asko",
 			"Universal Omega",
 			"Verdy p"
 		]
@@ -26,6 +27,7 @@
 	"discordnotifications-article-created": "A notification text for when a user creates a page\n\nParameters:\n* $1 - the username\n* $2 - article\n* $3 - summary",
 	"discordnotifications-file-namespace": "File namespace",
 	"discordnotifications-article-deleted": "A notification text for when a user deletes a page\n\nParameters:\n* $1 - the username\n* $2 - article\n* $3 - reason",
+	"discordnotifications-article-undeleted": "A notification text for when a user undeletes a page\n\nParameters:\n* $1 - the username\n* $2 - article\n* $3 - reason",
 	"discordnotifications-article-moved": "A notification text for when a user moves a page\n\nIn RTL languages, use ⬅.\n\nParameters:\n* $1 - the username\n* $2 - previous title of the article\n* $3 - new title of the article\n* $4 - reason",
 	"discordnotifications-article-protected": "A notification text for when a user protects a page\n\nParameters:\n* $1 - the username\n* $2 - action\n* $3 - article\n* $4 - reason",
 	"discordnotifications-article-protected-change": "Clause of edit protection change",
