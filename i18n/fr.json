@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aaribaud",
+			"Derugon",
 			"Eihel",
 			"Gomoko",
 			"JLTRY",
@@ -30,6 +31,7 @@
 	"discordnotifications-article-created": "📄 $1 a créé l’article « $2 ». $3",
 	"discordnotifications-file-namespace": "Fichier",
 	"discordnotifications-article-deleted": "❌ $1 a supprimé l’article « $2 ». Motif : $3",
+	"discordnotifications-article-undeleted": "🔄 $1 a rétabli l’article « $2 ». Motif : $3",
 	"discordnotifications-article-moved": "➡ $1 a déplacé l’article « $2 » vers « $3 ». Motif : $4",
 	"discordnotifications-article-protected": "🔒 $1 a $2 l’article « $3 ». Motif : $4",
 	"discordnotifications-article-protected-change": "modifié la protection de",

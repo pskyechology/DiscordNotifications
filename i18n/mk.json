@@ -15,6 +15,7 @@
 	"discordnotifications-delete": "избриши",
 	"discordnotifications-history": "историја",
 	"discordnotifications-diff": "разл.",
+	"discordnotifications-preview": "преглед",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|бајт|бајти}}",
 	"discordnotifications-article-saved": "📝 $1 ја $2 статијата $3 $4",
 	"discordnotifications-article-saved-minor-edits": "направи ситно уредување на",
@@ -54,5 +55,6 @@
 	"discordnotifications-flow-moderate-undelete": "поврати",
 	"discordnotifications-flow-new-topic": "💬 $1 ја создаде темата $2 на $3",
 	"discordnotifications-flow-reply": "💬 $1 одговори на $2",
-	"discordnotifications-import-complete": "⤵️ Статијата $1 е увезена."
+	"discordnotifications-import-complete": "⤵️ Статијата $1 е увезена.",
+	"discordnotifications-moderation-pending": "🔍 $1 поднесе уредување за $2 во [редицата за модерирање]($3)."
 }
