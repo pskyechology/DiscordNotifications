@@ -23,6 +23,7 @@
 	"discordnotifications-article-created": "📄 $1 ha create le articulo $2 $3",
 	"discordnotifications-file-namespace": "File",
 	"discordnotifications-article-deleted": "❌ $1 ha delite le articulo $2 Motivo: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 ha restaurate le articulo $2 Motivo: $3",
 	"discordnotifications-article-moved": "➡ $1 ha renominate le articulo $2 a $3. Motivo: $4",
 	"discordnotifications-article-protected": "🔒 $1 ha $2 le articulo $3. Motivo: $4",
 	"discordnotifications-article-protected-change": "cambiate le protection de",

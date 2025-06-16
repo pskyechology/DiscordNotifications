@@ -25,6 +25,7 @@
 	"discordnotifications-article-created": "📄 $1 قد أنشأ مقالة $2 $3",
 	"discordnotifications-file-namespace": "ملف",
 	"discordnotifications-article-deleted": "❌ $1 قد حذف مقالة $3 السبب: $2",
+	"discordnotifications-article-undeleted": "🔄 $1 قام بإلغاء حذف المقالة $2 السبب: $3",
 	"discordnotifications-article-moved": "➡ $1 قد نقل مقالة $2 إلى $3؛ السبب: $4",
 	"discordnotifications-article-protected": "🔒 $1 قد $2 مقالة $3؛ السبب: $4",
 	"discordnotifications-article-protected-change": "غير حماية",
