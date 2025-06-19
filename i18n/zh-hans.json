@@ -4,6 +4,7 @@
 			"Diskdance",
 			"Lakejason0",
 			"Universal Omega",
+			"人间百态",
 			"沈澄心"
 		]
 	},
@@ -17,6 +18,7 @@
 	"discordnotifications-delete": "删除",
 	"discordnotifications-history": "历史",
 	"discordnotifications-diff": "差异",
+	"discordnotifications-preview": "预览",
 	"discordnotifications-bytes": "$1{{PLURAL:$1|字节}}",
 	"discordnotifications-article-saved": "📝 $1已$2条目$3 $4",
 	"discordnotifications-article-saved-minor-edits": "进行了小编辑",
@@ -24,6 +26,7 @@
 	"discordnotifications-article-created": "📝 $1已创建条目$2 $3",
 	"discordnotifications-file-namespace": "文件",
 	"discordnotifications-article-deleted": "❌ $1已删除条目$2。原因：$3",
+	"discordnotifications-article-undeleted": "🔄 $1已取消删除条目$2。原因：$3",
 	"discordnotifications-article-moved": "➡ $1已移动条目$2到$3。原因：$4",
 	"discordnotifications-article-protected": "🔒 $1已$2条目$3。原因：$4",
 	"discordnotifications-article-protected-change": "更改保护",
