@@ -7,6 +7,7 @@
 			"MathXplore",
 			"Omotecho",
 			"Shirayuki",
+			"Shulmj",
 			"Waki285",
 			"렌즈"
 		]
@@ -21,6 +22,7 @@
 	"discordnotifications-delete": "削除",
 	"discordnotifications-history": "履歴",
 	"discordnotifications-diff": "差分",
+	"discordnotifications-preview": "プレビュー",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|バイト}}",
 	"discordnotifications-article-saved": "📝 $1 が $3 $2 しました。 $4",
 	"discordnotifications-article-saved-minor-edits": "の細部を編集",
@@ -28,6 +30,7 @@
 	"discordnotifications-article-created": "📄 $1 が記事 $2 を作成しました。 $3",
 	"discordnotifications-file-namespace": "ファイル",
 	"discordnotifications-article-deleted": "❌ $1 が記事 $2 を削除しました。理由: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 が記事 $2 を復元しました。理由: $3",
 	"discordnotifications-article-moved": "➡ $1 が記事の名前を $2 から $3 に変更しました。理由: $4",
 	"discordnotifications-article-protected": "🔒 $1 が記事 $3 を $2 しました。理由: $4",
 	"discordnotifications-article-protected-change": "保護",

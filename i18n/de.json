@@ -8,6 +8,7 @@
 			"Killarnee",
 			"Mario-WL",
 			"Masumrezarock100",
+			"MoritzMT20",
 			"Umlaut",
 			"Vanyar",
 			"Wolfdo",
@@ -23,6 +24,7 @@
 	"discordnotifications-delete": "Löschen",
 	"discordnotifications-history": "Versionen",
 	"discordnotifications-diff": "Änderungen",
+	"discordnotifications-preview": "Vorschau",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|Byte|Bytes}}",
 	"discordnotifications-article-saved": "📝 $1 hat den Artikel $3 $2 $4",
 	"discordnotifications-article-saved-minor-edits": "kleine Bearbeitung von",
@@ -30,6 +32,7 @@
 	"discordnotifications-article-created": "📄 $1 hat den Artikel $2 erstellt. $3",
 	"discordnotifications-file-namespace": "Datei",
 	"discordnotifications-article-deleted": "❌ $1 hat den Artikel $2 gelöscht. Begründung: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 hat den gelöschten Artikel $2 wiederhergestellt. Grund: $3",
 	"discordnotifications-article-moved": "➡ $1 hat den Artikel $2 nach $3 verschoben. Begründung: $4",
 	"discordnotifications-article-protected": "🔒 $1 hat den Schutz von Artikel $3 $2. Begründung: $4",
 	"discordnotifications-article-protected-change": "geändert",
@@ -49,5 +52,6 @@
 	"discordnotifications-flow-moderate-suppress": "unterdrückt",
 	"discordnotifications-flow-moderate-delete": "gelöscht",
 	"discordnotifications-flow-reply": "💬 $1 hat in $2 geantwortet",
-	"discordnotifications-import-complete": "⤵️ Artikel $1 wurde importiert."
+	"discordnotifications-import-complete": "⤵️ Artikel $1 wurde importiert.",
+	"discordnotifications-moderation-pending": "🔍 $1 hat eine Bearbeitung für $2 an die [moderation queue]($3) übermittelt."
 }
