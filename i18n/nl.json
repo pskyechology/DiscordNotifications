@@ -15,6 +15,7 @@
 	"discordnotifications-delete": "verwijderen",
 	"discordnotifications-history": "geschiedenis",
 	"discordnotifications-diff": "wijz",
+	"discordnotifications-preview": "voorvertoning",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
 	"discordnotifications-article-saved": "📝 $1 heeft pagina $3 $2 $4",
 	"discordnotifications-article-saved-minor-edits": "een kleine bewerking gemaakt",
