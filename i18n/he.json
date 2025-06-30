@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"YaronSh",
 			"מקף"
 		]
 	},
@@ -15,6 +16,7 @@
 	"discordnotifications-delete": "מחיקה",
 	"discordnotifications-history": "היסטוריה",
 	"discordnotifications-diff": "הבדל",
+	"discordnotifications-preview": "תצוגה מקדימה",
 	"discordnotifications-bytes": "{{PLURAL:$1|בית אחד|$1 בתים}}",
 	"discordnotifications-article-saved": "📝 פעולת $2 של $1 בערך $3 $4",
 	"discordnotifications-article-saved-minor-edits": "עריכה משנית",
@@ -22,6 +24,7 @@
 	"discordnotifications-article-created": "📄 $1 {{GENDER:$1|יצר|יצרה}} את הערך $2 $3",
 	"discordnotifications-file-namespace": "קובץ",
 	"discordnotifications-article-deleted": "❌ $1 {{GENDER:$1|מחק|מחקה}} את הערך $2. סיבה: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 {{GENDER:$1|שחזר|שחזרה}} את הערך $2. סיבה: $3",
 	"discordnotifications-article-moved": "⬅ $1 {{GENDER:$1|העביר|העבירה}} את הערך $2 לשם $3. סיבה: $4",
 	"discordnotifications-article-protected": "🔒 פעולת $2 של $1 בערך $3. סיבה: $4",
 	"discordnotifications-article-protected-change": "שינוי הגנה",

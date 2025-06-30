@@ -1,32 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
+			"Engineer56",
 			"Kareyac",
 			"Pacha Tchernof",
 			"Vlad5250"
 		]
 	},
 	"discordnotifications-desc": "Присылает уведомления в Discord для выбранных действий, который случаются на ваших сайтах с MediaWiki.",
+	"discordnotifications-extensionname": "DiscordNotifications",
 	"discordnotifications-block": "заблокировать",
 	"discordnotifications-groups": "группы",
 	"discordnotifications-talk": "обсуждение",
 	"discordnotifications-contribs": "вклад",
+	"discordnotifications-centralauth": "CentralAuth",
 	"discordnotifications-edit": "отредактировать",
 	"discordnotifications-delete": "удалить",
 	"discordnotifications-history": "история",
 	"discordnotifications-diff": "разн.",
+	"discordnotifications-preview": "предпросмотр",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|байт|байта|байт}}",
 	"discordnotifications-article-saved": "📝 $1 {{gender:$1|$2|$2а|$2-а}} малую правку в статье «$3» $4",
 	"discordnotifications-article-saved-minor-edits": "минимально отредактировал",
 	"discordnotifications-article-saved-edit": "отредактировал",
 	"discordnotifications-article-created": "📄 $1 {{gender:$1|создал|создала|создал-а}} статью «$2» $3",
 	"discordnotifications-file-namespace": "Файл",
-	"discordnotifications-article-deleted": "❌ $1 {{gender:$1|удалил|удалила|удалил-а}} статью «$2» Причина: $3",
-	"discordnotifications-article-moved": "➡ $1 {{gender:$1|переименовал|переименовала|переименовал-а}} $2 to $3. Reason: $4",
-	"discordnotifications-article-protected": "🔒 $1 {{gender:$1|$2|$2а|$2-а}} защиту статьи «$3». Причина: $4",
+	"discordnotifications-article-deleted": "❌ Пользователь $1 удалил статью «$2» Причина: $3",
+	"discordnotifications-article-undeleted": "🔄 Пользователь $1 восстановил статью $2 Причина: $3",
+	"discordnotifications-article-moved": "➡ Пользователь $1 переименовал $2 в $3. Причина: $4",
+	"discordnotifications-article-protected": "🔒 Пользователь $1 установил защиту от $2 на статью «$3». Причина: $4",
 	"discordnotifications-article-protected-change": "изменил",
 	"discordnotifications-article-protected-remove": "снял защиту с",
 	"discordnotifications-new-user": "👥 Новая учётная запись $1 была только что создана $2",
+	"discordnotifications-new-user-filtered": "👥 Новая учетная запись пользователя $1 только что создана $2 \n\nСоответствует фильтру",
 	"discordnotifications-file-uploaded": "📤 $1 {{gender:$1|загрузил|загрузила|загрузил-а}} файл <$2|$3> (формат: $4, размер: $5 $6, комментарий: $7)",
 	"discordnotifications-block-user": "🚫 $1 {{gender:$1|заблокировал|заблокировала|заблокировал-а}} $2 $3 Истекает: $4. $5",
 	"discordnotifications-block-user-reason": "по причине",
@@ -53,5 +59,6 @@
 	"discordnotifications-flow-moderate-undelete": "восстановил-а из удалённых",
 	"discordnotifications-flow-new-topic": "💬 {{gender:$1|создал|создала|создал-а}} тему «$2» на $3",
 	"discordnotifications-flow-reply": "💬 {{gender:$1|ответил|ответила|ответил-а}} в $2",
-	"discordnotifications-import-complete": "⤵️ Статья «$1» была импортирована."
+	"discordnotifications-import-complete": "⤵️ Статья «$1» была импортирована.",
+	"discordnotifications-moderation-pending": "🔍 $1 отправил на редактирование $2 в [очередь модерации]($3)."
 }
