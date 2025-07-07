@@ -396,17 +396,17 @@ class Hooks implements
 
 		try {
 			$email = $user->getEmail();
-		} catch ( Exception $e ) {
+		} catch ( Exception ) {
 		}
 
 		try {
 			$realname = $user->getRealName();
-		} catch ( Exception $e ) {
+		} catch ( Exception ) {
 		}
 
 		try {
 			$ipaddress = $user->getRequest()->getIP();
-		} catch ( Exception $e ) {
+		} catch ( Exception ) {
 		}
 
 		$messageExtra = '';

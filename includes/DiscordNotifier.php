@@ -206,8 +206,7 @@ class DiscordNotifier {
 		] );
 
 		// Execute the curl script
-		$curl_output = curl_exec( $h );
-
+		curl_exec( $h );
 		curl_close( $h );
 	}
 
@@ -225,7 +224,7 @@ class DiscordNotifier {
 		];
 
 		$context = stream_context_create( $extraData );
-		$result = file_get_contents( $url, false, $context );
+		file_get_contents( $url, false, $context );
 	}
 
 	/**
