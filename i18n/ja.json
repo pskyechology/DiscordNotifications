@@ -63,5 +63,6 @@
 	"discordnotifications-flow-moderate-undelete": "の削除を取り消",
 	"discordnotifications-flow-new-topic": "💬 $1 がディスカッション $3 に新規トピック $2 を作成しました。",
 	"discordnotifications-flow-reply": "💬 $1 がディスカッション $2 で返信しました。",
-	"discordnotifications-import-complete": "⤵️ 記事 $1 がインポートされました。"
+	"discordnotifications-import-complete": "⤵️ 記事 $1 がインポートされました。",
+	"discordnotifications-moderation-pending": "🔍 $1 が $2 の編集を [Moderation キュー]($3) に送信しました。"
 }
