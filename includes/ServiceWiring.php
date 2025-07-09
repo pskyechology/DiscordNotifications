@@ -15,7 +15,8 @@ return [
 				$services->getConfigFactory()->makeConfig( 'DiscordNotifications' )
 			),
 			$services->getPermissionManager(),
-			$services->getUserGroupManager()
+			$services->getUserGroupManager(),
+			$services->getUrlUtils()
 		);
 	},
 ];

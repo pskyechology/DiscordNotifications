@@ -8,12 +8,15 @@ use Flow\Collection\PostCollection;
 use Flow\Model\UUID;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentity;
+use MediaWiki\Utils\UrlUtils;
 use MessageLocalizer;
+use Psr\Log\LoggerInterface;
 use WikiPage;
 
 class DiscordNotifier {
@@ -57,17 +60,25 @@ class DiscordNotifier {
 	/** @var UserGroupManager */
 	private $userGroupManager;
 
+	/** @var UrlUtils */
+	private $urlUtils;
+
+	/** @var LoggerInterface */
+	private $logger;
+
 	/**
 	 * @param MessageLocalizer $messageLocalizer
 	 * @param ServiceOptions $options
 	 * @param PermissionManager $permissionManager
 	 * @param UserGroupManager $userGroupManager
+	 * @param UrlUtils $urlUtils
 	 */
 	public function __construct(
 		MessageLocalizer $messageLocalizer,
 		ServiceOptions $options,
 		PermissionManager $permissionManager,
-		UserGroupManager $userGroupManager
+		UserGroupManager $userGroupManager,
+		UrlUtils $urlUtils
 	) {
 		$options->assertRequiredOptions( self::CONSTRUCTOR_OPTIONS );
 
@@ -75,6 +86,8 @@ class DiscordNotifier {
 		$this->options = $options;
 		$this->permissionManager = $permissionManager;
 		$this->userGroupManager = $userGroupManager;
+		$this->urlUtils = $urlUtils;
+		$this->logger = LoggerFactory::getInstance( 'DiscordNotifications' );
 	}
 
 	private function notifyInternal(
@@ -182,6 +195,10 @@ class DiscordNotifier {
 	 * @param string $postData
 	 */
 	private function sendCurlRequest( string $url, string $postData ) {
+		if ( !$this->isValidWebhookUrl( $url ) ) {
+			return;
+		}
+
 		$h = curl_init();
 		curl_setopt( $h, CURLOPT_URL, $url );
 
@@ -215,6 +232,10 @@ class DiscordNotifier {
 	 * @param string $postData
 	 */
 	private function sendHttpRequest( string $url, string $postData ) {
+		if ( !$this->isValidWebhookUrl( $url ) ) {
+			return;
+		}
+
 		$extraData = [
 			'http' => [
 				'header'  => 'Content-type: application/json',
@@ -225,6 +246,30 @@ class DiscordNotifier {
 
 		$context = stream_context_create( $extraData );
 		file_get_contents( $url, false, $context );
+	}
+
+	/**
+	 * Make sure that the URL we're sending a request to is a Discord webhook URL.
+	 *
+	 * @param string $url
+	 * @return bool
+	 */
+	private function isValidWebhookUrl( string $url ): bool {
+		$urlParts = $this->urlUtils->parse( $url );
+
+		$isValid = $urlParts !== null
+			&& $urlParts['scheme'] === 'https'
+			&& !isset( $urlParts['port'] )
+			&& !isset( $urlParts['query'] )
+			&& !isset( $urlParts['fragment'] )
+			&& preg_match( "/^(discord|discordapp)\.com$/", $urlParts['host'] )
+			&& preg_match( "#^/api/webhooks/[0-9]+/[a-zA-Z0-9_-]*$#", $urlParts['path'] );
+
+		if ( !$isValid ) {
+			$this->logger->warning( 'Invalid webhook URL: {url}', [ 'url' => $url ] );
+		}
+
+		return $isValid;
 	}
 
 	/**
