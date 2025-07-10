@@ -9,6 +9,7 @@
 			"Mario-WL",
 			"Masumrezarock100",
 			"MoritzMT20",
+			"PretzelRocky",
 			"Umlaut",
 			"Vanyar",
 			"Wolfdo",
@@ -49,8 +50,10 @@
 	"discordnotifications-flow-lock-topic": "💬 $1 hat das Thema $3 $2",
 	"discordnotifications-flow-lock-topic-unlock": "wieder geöffnet",
 	"discordnotifications-flow-moderate-hide": "versteckt",
+	"discordnotifications-flow-moderate-unhide": "wieder sichtbar gemacht",
 	"discordnotifications-flow-moderate-suppress": "unterdrückt",
 	"discordnotifications-flow-moderate-delete": "gelöscht",
+	"discordnotifications-flow-moderate-undelete": "wiederhergestellt",
 	"discordnotifications-flow-reply": "💬 $1 hat in $2 geantwortet",
 	"discordnotifications-import-complete": "⤵️ Artikel $1 wurde importiert.",
 	"discordnotifications-moderation-pending": "🔍 $1 hat eine Bearbeitung für $2 an die [moderation queue]($3) übermittelt."

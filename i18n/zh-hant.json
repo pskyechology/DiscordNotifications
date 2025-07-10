@@ -18,6 +18,7 @@
 	"discordnotifications-delete": "刪除",
 	"discordnotifications-history": "歷史",
 	"discordnotifications-diff": "差異",
+	"discordnotifications-preview": "預覽",
 	"discordnotifications-bytes": "$1{{PLURAL:$1|位元組}}",
 	"discordnotifications-article-saved": "📝 $1已$2條目$3 $4",
 	"discordnotifications-article-saved-minor-edits": "稍微編輯了",
@@ -25,6 +26,7 @@
 	"discordnotifications-article-created": "📝 $1已建立條目$2 $3",
 	"discordnotifications-file-namespace": "檔案",
 	"discordnotifications-article-deleted": "❌ $1已刪除條目$2。原因：$3",
+	"discordnotifications-article-undeleted": "🔄 $1已取消刪除條目$2，原因：$3",
 	"discordnotifications-article-moved": "➡ $1已移動條目$2到$3。原因：$4",
 	"discordnotifications-article-protected": "🔒 $1已$2條目$3。原因：$4",
 	"discordnotifications-article-protected-change": "變更保護",
@@ -57,5 +59,6 @@
 	"discordnotifications-flow-moderate-undelete": "已取消刪除",
 	"discordnotifications-flow-new-topic": "💬 $1已在$3上建立話題$2",
 	"discordnotifications-flow-reply": "💬 $1已回應$2",
-	"discordnotifications-import-complete": "⤵️ 條目$1已匯入。"
+	"discordnotifications-import-complete": "⤵️ 條目$1已匯入。",
+	"discordnotifications-moderation-pending": "🔍 $1已將對於$2的編輯提交至[審查佇列]($3)。"
 }
