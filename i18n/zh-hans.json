@@ -3,6 +3,7 @@
 		"authors": [
 			"Diskdance",
 			"Lakejason0",
+			"SaoMikoto",
 			"Universal Omega",
 			"人间百态",
 			"沈澄心"
@@ -59,5 +60,6 @@
 	"discordnotifications-flow-moderate-undelete": "已还原",
 	"discordnotifications-flow-new-topic": "💬 $1已在$3上创建话题$2",
 	"discordnotifications-flow-reply": "💬 $1已回复$2",
-	"discordnotifications-import-complete": "⤵️ 条目$1已导入。"
+	"discordnotifications-import-complete": "⤵️ 条目$1已导入。",
+	"discordnotifications-moderation-pending": "🔍 $1已将对$2的编辑提交至[审核队列]（$3）。"
 }
