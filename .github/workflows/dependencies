@@ -5,5 +5,5 @@ Flow:
   branch: auto
   repo: auto
 Moderation:
-  branch: auto
+  branch: master
   repo: 'https://github.com/edwardspec/mediawiki-moderation'
