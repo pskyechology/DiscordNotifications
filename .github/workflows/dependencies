@@ -4,3 +4,6 @@ CentralAuth:
 Flow:
   branch: auto
   repo: auto
+Moderation:
+  branch: auto
+  repo: auto

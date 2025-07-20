@@ -26,3 +26,4 @@ Refactor:
 Fix:
 * Set DiscordNotificationShowSuppressed to false by default.
 * DiscordNotifier::parseurl() no longer parses out unnecessary symbols, causing broken URLs.
+* Skip notifying imports when no revisions were imported.
