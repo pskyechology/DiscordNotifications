@@ -4,6 +4,3 @@ CentralAuth:
 Flow:
   branch: auto
   repo: auto
-Moderation:
-  branch: master
-  repo: 'https://github.com/edwardspec/mediawiki-moderation'
