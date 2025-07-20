@@ -26,7 +26,7 @@ Want to translate this extension to your language? Just visit [translatewiki.net
 ## Requirements
 
 * [cURL](http://curl.haxx.se/) or ability to use PHP function `file_get_contents` for sending the data. Defaults to cURL. See the configuration parameter `$wgDiscordSendMethod` below to switch between cURL and file_get_contents.
-* MediaWiki 1.41+
+* MediaWiki 1.43+
 * Apache should have NE (NoEscape) flag on to prevent issues in URLs. By default, you should have this enabled.
 
 ## How to install

@@ -49,22 +49,22 @@ class DiscordNotifier {
 	];
 
 	/** @var MessageLocalizer */
-	private $messageLocalizer;
+	private MessageLocalizer $messageLocalizer;
 
 	/** @var ServiceOptions */
-	private $options;
+	private ServiceOptions $options;
 
 	/** @var PermissionManager */
-	private $permissionManager;
+	private PermissionManager $permissionManager;
 
 	/** @var UserGroupManager */
-	private $userGroupManager;
+	private UserGroupManager $userGroupManager;
 
 	/** @var UrlUtils */
-	private $urlUtils;
+	private UrlUtils $urlUtils;
 
 	/** @var LoggerInterface */
-	private $logger;
+	private LoggerInterface $logger;
 
 	/**
 	 * @param MessageLocalizer $messageLocalizer
@@ -96,7 +96,8 @@ class DiscordNotifier {
 		string $action,
 		array $embedFields,
 		?string $webhook,
-		?Title $title
+		?Title $title,
+		?string $imageUrl
 	): void {
 		if ( $user && $this->userIsExcluded( $user, $action, (bool)$webhook ) ) {
 			// Don't send notifications if user meets exclude conditions
@@ -148,6 +149,11 @@ class DiscordNotifier {
 			$embed->setFooter( 'DiscordNotifications v3' );
 		}
 
+		if ( $imageUrl ) {
+			$imageUrl = $this->parseurl( $imageUrl );
+			$embed->setImage( $imageUrl );
+		}
+
 		$post = $embed->build();
 
 		// Use file_get_contents to send the data. Note that you will need to have allow_url_fopen enabled in php.ini for this to work.
@@ -180,12 +186,13 @@ class DiscordNotifier {
 		string $action,
 		array $embedFields = [],
 		?string $webhook = null,
-		?Title $title = null
+		?Title $title = null,
+		?string $imageUrl = null
 	): void {
 		DeferredUpdates::addCallableUpdate(
 			fn () => $this->notifyInternal(
 				$message, $user, $action, $embedFields,
-				$webhook, $title
+				$webhook, $title, $imageUrl
 			)
 		);
 	}
@@ -194,7 +201,7 @@ class DiscordNotifier {
 	 * @param string $url
 	 * @param string $postData
 	 */
-	private function sendCurlRequest( string $url, string $postData ) {
+	private function sendCurlRequest( string $url, string $postData ): void {
 		if ( !$this->isValidWebhookUrl( $url ) ) {
 			return;
 		}
@@ -231,7 +238,7 @@ class DiscordNotifier {
 	 * @param string $url
 	 * @param string $postData
 	 */
-	private function sendHttpRequest( string $url, string $postData ) {
+	private function sendHttpRequest( string $url, string $postData ): void {
 		if ( !$this->isValidWebhookUrl( $url ) ) {
 			return;
 		}
@@ -279,12 +286,7 @@ class DiscordNotifier {
 	 * @return string
 	 */
 	public function parseurl( string $url ): string {
-		$url = str_replace( ' ', '_', $url );
-		$url = str_replace( '(', '%28', $url );
-		$url = str_replace( ')', '%29', $url );
-		$url = str_replace( '?', '%3F', $url );
-
-		return $url;
+		return str_replace( ' ', '_', $url );
 	}
 
 	/**
@@ -297,19 +299,20 @@ class DiscordNotifier {
 	 * @return string
 	 */
 	public function getDiscordUserText( $user, string $languageCode = '', bool $includeCentralAuthUrl = false ): string {
+		$wikiUrl = $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' );
+
 		$userName = $user->getName();
 		$user_url = str_replace( '&', '%26', $userName );
-
 		$userName = str_replace( '>', '\>', $userName );
 
 		if ( $this->options->get( 'DiscordIncludeUserUrls' ) ) {
 			$userUrls = sprintf(
 				'%s (%s | %s | %s | %s',
-				'<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingUserPage' ) . $user_url ) . '|' . $userName . '>',
-				'<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingBlockUser' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-block', $languageCode ) . '>',
-				'<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingUserRights' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-groups', $languageCode ) . '>',
-				'<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingUserTalkPage' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-talk', $languageCode ) . '>',
-				'<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingUserContributions' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-contribs', $languageCode ) . '>'
+				'<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingUserPage' ) . $user_url ) . '|' . $userName . '>',
+				'<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingBlockUser' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-block', $languageCode ) . '>',
+				'<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingUserRights' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-groups', $languageCode ) . '>',
+				'<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingUserTalkPage' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-talk', $languageCode ) . '>',
+				'<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingUserContributions' ) . $user_url ) . '|' . $this->getMessageInLanguage( 'discordnotifications-contribs', $languageCode ) . '>'
 			);
 
 			if (
@@ -325,7 +328,7 @@ class DiscordNotifier {
 
 			return $userUrls;
 		} else {
-			return '<' . $this->parseurl( $this->options->get( 'DiscordNotificationWikiUrl' ) . $this->options->get( 'DiscordNotificationWikiUrlEnding' ) . $this->options->get( 'DiscordNotificationWikiUrlEndingUserPage' ) . $user_url ) . '|' . $userName . '>';
+			return '<' . $this->parseurl( $wikiUrl . $this->options->get( 'DiscordNotificationWikiUrlEndingUserPage' ) . $user_url ) . '|' . $userName . '>';
 		}
 	}
 
