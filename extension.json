@@ -35,14 +35,14 @@
 			]
 		},
 		"FlowHooks": {
-			"class": "Miraheze\\DiscordNotifications\\FlowHooks",
+			"class": "Miraheze\\DiscordNotifications\\Hooks\\FlowHooks",
 			"services": [
 				"ConfigFactory",
 				"DiscordNotifier"
 			]
 		},
 		"ModerationHooks": {
-			"class": "Miraheze\\DiscordNotifications\\ModerationHooks",
+			"class": "Miraheze\\DiscordNotifications\\Hooks\\ModerationHooks",
 			"services": [
 				"ConfigFactory",
 				"DiscordNotifier",
