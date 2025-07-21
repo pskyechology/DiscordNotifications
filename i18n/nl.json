@@ -22,7 +22,8 @@
 	"discordnotifications-article-saved-edit": "bewerkt",
 	"discordnotifications-article-created": "📄 $1 heeft pagina $2 aangemaakt $3",
 	"discordnotifications-file-namespace": "Bestand",
-	"discordnotifications-article-deleted": "❌ $1 heeft pagina $2 verwijderd. Reden: $3",
+	"discordnotifications-article-deleted": "❌ $1 heeft het artikel $2 verwijderd. Reden: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 heeft het artikel $2 teruggeplaatst. Reden: $3",
 	"discordnotifications-article-moved": "➡ $1 heeft het artikel $2 hernoemd tot $3. Reden: $4",
 	"discordnotifications-article-protected": "🔒 $1 heeft de beveiliging van $2 $3. Reden: $4",
 	"discordnotifications-article-protected-change": "gewijzigd",
@@ -55,5 +56,6 @@
 	"discordnotifications-flow-moderate-undelete": "teruggeplaatst",
 	"discordnotifications-flow-new-topic": "💬 $1 heeft het onderwerp $2 aangemaakt op $3",
 	"discordnotifications-flow-reply": "💬 $1 heeft gereageerd in $2",
-	"discordnotifications-import-complete": "⤵️ Het artikel $1 is geïmporteerd."
+	"discordnotifications-import-complete": "⤵️ Het artikel $1 is geïmporteerd.",
+	"discordnotifications-moderation-pending": "🔍 $1 heeft een bewerking van $2 ingediend bij de [moderatiewachtrij]($3)."
 }
