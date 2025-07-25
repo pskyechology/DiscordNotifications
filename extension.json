@@ -34,13 +34,6 @@
 				"WikiPageFactory"
 			]
 		},
-		"FlowHooks": {
-			"class": "Miraheze\\DiscordNotifications\\Hooks\\FlowHooks",
-			"services": [
-				"ConfigFactory",
-				"DiscordNotifier"
-			]
-		},
 		"ModerationHooks": {
 			"class": "Miraheze\\DiscordNotifications\\Hooks\\ModerationHooks",
 			"services": [
@@ -81,9 +74,6 @@
 		},
 		"PageSaveComplete": {
 			"handler": "main"
-		},
-		"APIFlowAfterExecute": {
-			"handler": "FlowHooks"
 		},
 		"ModerationPending": {
 			"handler": "ModerationHooks"
@@ -172,7 +162,6 @@
 				"BlockedUser": true,
 				"NewUser": true,
 				"UserGroupsChanged": true,
-				"Flow": true,
 				"ModerationPending": true
 			}
 		},

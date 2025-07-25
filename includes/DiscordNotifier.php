@@ -4,8 +4,6 @@ declare( strict_types = 1 );
 
 namespace Miraheze\DiscordNotifications;
 
-use Flow\Collection\PostCollection;
-use Flow\Model\UUID;
 use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\Logger\LoggerFactory;
@@ -117,7 +115,7 @@ class DiscordNotifier {
 		$message = str_replace( [ "\r", "\n" ], '', $message );
 
 		$color = match ( $action ) {
-			'article_saved', 'flow', 'import_complete', 'user_groups_changed', 'moderation_pending' => '2993970',
+			'article_saved', 'import_complete', 'user_groups_changed', 'moderation_pending' => '2993970',
 			'article_inserted', 'file_uploaded', 'new_user_account' => '3580392',
 			'article_deleted', 'user_blocked' => '15217973',
 			'article_undeleted' => '15263797',
@@ -822,17 +820,5 @@ class DiscordNotifier {
 
 		return str_replace( array_keys( $replacements ), array_values( $replacements ),
 			strip_tags( $diff ) );
-	}
-
-	/**
-	 * @param string $UUID
-	 * @return string
-	 */
-	public function flowUUIDToTitleText( string $UUID ): string {
-		$UUID = UUID::create( $UUID );
-		$collection = PostCollection::newFromId( $UUID );
-		$revision = $collection->getLastRevision();
-
-		return $revision->getContent( 'topic-title-plaintext' );
 	}
 }
