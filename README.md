@@ -313,6 +313,15 @@ $wgDiscordNotificationEnabledActions["UserGroupsChanged"] = true;
 $wgDiscordNotificationEnabledActions["ModerationPending"] = true;
 ```
 
+### Embed images on file uploads
+
+By default, images uploaded to MediaWiki will be embedded in the Discord message. You can change this by setting the following variable to false:
+
+```php
+$wgDiscordNotificationEmbedImages = false;
+```
+
+
 ## Additional MediaWiki URL Settings
 
 Should any of these default MediaWiki system page URLs differ in your installation, change them here.
