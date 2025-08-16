@@ -462,7 +462,7 @@ class Hooks implements
 			strip_tags( $localFile->getDescription() )
 		);
 
-		$this->discordNotifier->notify( $message, $user, 'file_uploaded', imageUrl: $localFile->getFullUrl() ?: $showImage );
+		$this->discordNotifier->notify( $message, $user, 'file_uploaded', imageUrl: ( $showImage ? $localFile->getFullUrl() : null ) );
 	}
 
 	/**
