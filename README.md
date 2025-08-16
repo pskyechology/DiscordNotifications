@@ -318,7 +318,7 @@ $wgDiscordNotificationEnabledActions["ModerationPending"] = true;
 By default, images uploaded to MediaWiki will be embedded in the Discord message. You can change this by setting the following variable to false:
 
 ```php
-$wgDiscordNotificationEmbedImages = false;
+$wgDiscordNotificationShowImage = false;
 ```
 
 

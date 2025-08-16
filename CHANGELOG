@@ -23,6 +23,7 @@ Refactor:
 * Added property type declarations and initialize them.
 * Added return types to hook functions.
 * Deduplicated DiscordNotifier::getDiscordUserText() code.
+* Change DiscordEmbedBuilder::color type to an int.
 
 Fix:
 * Set DiscordNotificationShowSuppressed to false by default.
