@@ -445,9 +445,9 @@ class Hooks implements
 		if ( !$this->config->get( 'DiscordNotificationEnabledActions' )['FileUpload'] ) {
 			return;
 		}
-		$showImage = ( $this->config->get( 'DiscordNotificationShowImage' ) );
-
 		$localFile = $uploadBase->getLocalFile();
+
+		$showImage = ( $this->config->get( 'DiscordNotificationShowImage' ) && ( $localFile->getMediaType() === 'BITMAP' ) );
 
 		$lang = RequestContext::getMain()->getLanguage();
 		$user = RequestContext::getMain()->getUser();
@@ -462,7 +462,7 @@ class Hooks implements
 			strip_tags( $localFile->getDescription() )
 		);
 
-		$this->discordNotifier->notify( $message, $user, 'file_uploaded', imageUrl: ( $showImage ? $localFile->getFullUrl() : null ) );
+		$this->discordNotifier->notify( $message, $user, 'file_uploaded', imageUrl: ( $showImage ? $localFile->getCanonicalUrl() : null ) );
 	}
 
 	/**
