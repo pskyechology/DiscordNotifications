@@ -1,9 +1,10 @@
 3.1.0
 
-Flow (
+Support for APIFlowAfterExecute (Flow/Structured Discussions) is dropped, as it is unmaintained and will be removed from Miraheze.
 
 Feature:
 * Added support for embedding images on image uploads.
+* Added a boolean configuration option for image embedding ($wgDiscordNotificationShowImage), defaults to true.
 
 Refactor:
 * BREAKING CHANGE: Individual config variables for action types have been condensed into a single one: DiscordNotificationEnabledActions. This includes:
@@ -19,10 +20,8 @@ Refactor:
 ** DiscordNotificationAfterImportPage
 ** DiscordNotificationModerationPending
 ** DiscordNotificationFileUpload
-** DiscordNotificationFlow
-* Added property type declarations.
+* Added property type declarations and initialize them.
 * Added return types to hook functions.
-* Moved ModerationPending and APIFlowAfterExecute to their own separate handlers.
 * Deduplicated DiscordNotifier::getDiscordUserText() code.
 
 Fix:

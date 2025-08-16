@@ -33,15 +33,6 @@
 				"UserGroupManager",
 				"WikiPageFactory"
 			]
-		},
-		"ModerationHooks": {
-			"class": "Miraheze\\DiscordNotifications\\Hooks\\ModerationHooks",
-			"services": [
-				"ConfigFactory",
-				"DiscordNotifier",
-				"TitleFactory",
-				"UserFactory"
-			]
 		}
 	},
 	"Hooks": {
@@ -76,7 +67,7 @@
 			"handler": "main"
 		},
 		"ModerationPending": {
-			"handler": "ModerationHooks"
+			"handler": "main"
 		}
 	},
 	"config": {
