@@ -10,11 +10,5 @@
 	"discordnotifications-delete": "sutrae",
 	"discordnotifications-history": "istoria",
 	"discordnotifications-article-saved-edit": "editada",
-	"discordnotifications-file-namespace": "Fix",
-	"discordnotifications-flow-moderate-hide": "ascondeda",
-	"discordnotifications-flow-moderate-unhide": "desascondeda",
-	"discordnotifications-flow-moderate-suppress": "supresada",
-	"discordnotifications-flow-moderate-unsuppress": "desupresada",
-	"discordnotifications-flow-moderate-delete": "sutraeda",
-	"discordnotifications-flow-moderate-undelete": "desutraeda"
+	"discordnotifications-file-namespace": "Fix"
 }

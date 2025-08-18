@@ -21,10 +21,5 @@
 	"discordnotifications-block-user-reason": "ਤਰਕ ਨਾਲ",
 	"discordnotifications-block-user-list": "ਸਾਰੀਆਂ ਪਾਬੰਦੀਆਂ ਦੀ ਸੂਚੀ",
 	"discordnotifications-summary": "ਸਾਰ: $1",
-	"discordnotifications-content": "ਸਮੱਗਰੀ:",
-	"discordnotifications-flow-lock-topic-lock": "ਹੱਲ-ਕੱਢਿਆ ਗਿਆ",
-	"discordnotifications-flow-lock-topic-unlock": "ਮੁੜ-ਖੋਲ੍ਹਿਆ",
-	"discordnotifications-flow-moderate-hide": "ਲੁਕਵਾਂ",
-	"discordnotifications-flow-moderate-suppress": "ਦਬਾਇਆ ਗਿਆ",
-	"discordnotifications-flow-moderate-delete": "ਮਿਟਾਇਆ ਗਿਆ"
+	"discordnotifications-content": "ਸਮੱਗਰੀ:"
 }

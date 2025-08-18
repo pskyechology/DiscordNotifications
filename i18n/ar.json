@@ -41,23 +41,6 @@
 	"discordnotifications-view-user-rights": "عرض أو إدارة صلاحيات المستخدم",
 	"discordnotifications-change-user-groups": "%s قد غير مجموعات المستخدمين لـ%s، المجموعات الجديدة: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 قد غير مجموعات المستخدمين لـ$2، المجموعات القديمة: $3، المجموعات الجديدة: $4",
-	"discordnotifications-flow-edit-header": "💬 $1 قد عدل وصف لوحة $2",
-	"discordnotifications-flow-edit-post": "💬 $1 قد عدل منشورا في $2",
-	"discordnotifications-flow-edit-title": "💬 $1 قد عدل عنوان الموضوع إلى $2 في $3",
-	"discordnotifications-flow-edit-topic-summary": "💬 $1 قد عدل ملخص الموضوع في $2",
-	"discordnotifications-flow-lock-topic": "💬 $1 قد $2 الموضوع $3",
-	"discordnotifications-flow-lock-topic-lock": "محلول",
-	"discordnotifications-flow-lock-topic-unlock": "معاد فتحه",
-	"discordnotifications-flow-moderate-post": "💬 $1 قد $2 منشورا في موضوع $3",
-	"discordnotifications-flow-moderate-topic": "💬 $1 قد $2 الموضوع $3",
-	"discordnotifications-flow-moderate-hide": "مخفي",
-	"discordnotifications-flow-moderate-unhide": "أظهر",
-	"discordnotifications-flow-moderate-suppress": "مخفي",
-	"discordnotifications-flow-moderate-unsuppress": "إلغاء الطمس",
-	"discordnotifications-flow-moderate-delete": "محذوف",
-	"discordnotifications-flow-moderate-undelete": "مسترجع",
-	"discordnotifications-flow-new-topic": "💬 $1 قد أنشأ الموضوع $2 في $3",
-	"discordnotifications-flow-reply": "💬 $1 قد رد في $2",
 	"discordnotifications-import-complete": "تم استيراد المقالة $1.",
 	"discordnotifications-moderation-pending": "🔍 قام $1 بإرسال تعديل بقيمة $2 إلى [قائمة التعديل]($3)."
 }

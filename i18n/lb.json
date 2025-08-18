@@ -30,18 +30,5 @@
 	"discordnotifications-content": "Inhalt:",
 	"discordnotifications-change-user-groups": "%s huet d'Benotzergruppe fir %s geännert. Nei Gruppen: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 huet d'Benotzergruppe fir $2 geännert. Al Gruppen: $3. Nei Gruppen: $4",
-	"discordnotifications-flow-edit-post": "💬 $1 huet e Bäitrag op $2 geännert",
-	"discordnotifications-flow-edit-title": "💬 $1 huet den Titel vum Theema op $2 geännert op $3",
-	"discordnotifications-flow-lock-topic": "💬 $1 huet d'Theema $3 $2",
-	"discordnotifications-flow-lock-topic-lock": "geléist",
-	"discordnotifications-flow-lock-topic-unlock": "nees opgemaach",
-	"discordnotifications-flow-moderate-hide": "verstoppt",
-	"discordnotifications-flow-moderate-unhide": "nees gewisen",
-	"discordnotifications-flow-moderate-suppress": "ënnerdréckt",
-	"discordnotifications-flow-moderate-unsuppress": "net méi ënnerdréckt",
-	"discordnotifications-flow-moderate-delete": "geläscht",
-	"discordnotifications-flow-moderate-undelete": "restauréiert",
-	"discordnotifications-flow-new-topic": "💬 $1 huet d'Theema $2 op $3 ugeluecht",
-	"discordnotifications-flow-reply": "💬 $1 huet op $2 geäntwert",
 	"discordnotifications-import-complete": "⤵️ Artikel $1 gouf importéiert."
 }

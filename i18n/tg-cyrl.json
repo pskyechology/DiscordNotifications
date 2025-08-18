@@ -20,11 +20,5 @@
 	"discordnotifications-article-protected": "🔒 $1 мақолаи $3-ро $2 кард. Сабаб: $4",
 	"discordnotifications-block-user-reason": "бо сабаб",
 	"discordnotifications-block-user-list": "Феҳристи тамоми басташудаҳо",
-	"discordnotifications-summary": "Хулоса: $1",
-	"discordnotifications-flow-lock-topic-lock": "ҳалшуда",
-	"discordnotifications-flow-moderate-topic": "💬 $1 мавзӯи $3ро $2 кард",
-	"discordnotifications-flow-moderate-hide": "пинҳон",
-	"discordnotifications-flow-moderate-unhide": "пинҳоннашуда",
-	"discordnotifications-flow-moderate-delete": "ҳазф шуд",
-	"discordnotifications-flow-moderate-undelete": "ҳазфнашуда"
+	"discordnotifications-summary": "Хулоса: $1"
 }

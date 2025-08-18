@@ -17,7 +17,5 @@
 	"discordnotifications-article-saved-edit": "canciatu",
 	"discordnotifications-file-namespace": "File",
 	"discordnotifications-article-deleted": "❌ $1 cancillau la vuci $2 Mutivu: $3",
-	"discordnotifications-article-protected": "🔒 $1 havi $2 la vuci $3. Mutivu: $4",
-	"discordnotifications-flow-moderate-hide": "ammucciatu",
-	"discordnotifications-flow-moderate-delete": "cancillatu"
+	"discordnotifications-article-protected": "🔒 $1 havi $2 la vuci $3. Mutivu: $4"
 }
