@@ -40,5 +40,6 @@
 	"discordnotifications-view-user-rights": "הצגה או שינוי של הרשאות משתמש",
 	"discordnotifications-change-user-groups": "%s שינה קבוצות משתמש עבור %s. קבוצות חדשות: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 {{GENDER:$1|שינה|שינתה}} את קבוצות המשתמש של $2. קבוצות ישנות: $3. קבוצות חדשות: $4.",
-	"discordnotifications-import-complete": "⤵️ הערך $1 יובא."
+	"discordnotifications-import-complete": "⤵️ הערך $1 יובא.",
+	"discordnotifications-moderation-pending": "🔍 $1 שלח עריכה עבור $2 ל[תור הפיקוח]($3)."
 }
