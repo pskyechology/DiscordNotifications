@@ -450,7 +450,7 @@ class Hooks implements
 		$showImage = ( $this->config->get( 'DiscordNotificationShowImage' ) && ( $localFile->getMediaType() === 'BITMAP' ) );
 
 		$lang = RequestContext::getMain()->getLanguage();
-		$user = $this->userFactory->newFromUserIdentity( $localFile->getUploader() );
+		$user = $this->userFactory->newFromId( $localFile->getUploader()->getId() );
 
 		$message = $this->discordNotifier->getMessage( 'discordnotifications-file-uploaded',
 			$this->discordNotifier->getDiscordUserText( $user ),
