@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bapham123"
+		]
+	},
+	"discordnotifications-block": "cấm",
+	"discordnotifications-groups": "nhóm",
+	"discordnotifications-talk": "thảo luận",
+	"discordnotifications-contribs": "đóng góp",
+	"discordnotifications-centralauth": "Đăng nhập trung ương",
+	"discordnotifications-edit": "sửa đổi",
+	"discordnotifications-delete": "xóa",
+	"discordnotifications-history": "lịch sử",
+	"discordnotifications-diff": "khác",
+	"discordnotifications-preview": "xem trước",
+	"discordnotifications-article-saved-edit": "đã sửa đổi",
+	"discordnotifications-file-namespace": "Tập tin"
+}
