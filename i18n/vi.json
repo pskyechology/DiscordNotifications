@@ -15,5 +15,7 @@
 	"discordnotifications-diff": "khác",
 	"discordnotifications-preview": "xem trước",
 	"discordnotifications-article-saved-edit": "đã sửa đổi",
-	"discordnotifications-file-namespace": "Tập tin"
+	"discordnotifications-file-namespace": "Tập tin",
+	"discordnotifications-summary": "Tóm tắt: $1",
+	"discordnotifications-content": "Nội dung:"
 }
