@@ -15,7 +15,18 @@
 	"discordnotifications-diff": "khác",
 	"discordnotifications-preview": "xem trước",
 	"discordnotifications-article-saved-edit": "đã sửa đổi",
+	"discordnotifications-article-created": "📄 $1 đã tạo $2 $3",
 	"discordnotifications-file-namespace": "Tập tin",
+	"discordnotifications-article-deleted": "❌ $1 đã xóa $2 Lý do: $3",
+	"discordnotifications-article-undeleted": "🔄 $1 đã phục hồi $2 Lý do: $3",
+	"discordnotifications-article-moved": "➡ $1 đã chuyển $2 thành $3. Lý do: $4",
+	"discordnotifications-article-protected": "🔒 $1 có $2 bài viết $3 . Lý do: $4",
+	"discordnotifications-article-protected-change": "đổi mức khóa",
+	"discordnotifications-article-protected-remove": "mở khóa",
+	"discordnotifications-new-user": "👥 Tài khoản người dùng mới $1 vừa được tạo $2",
+	"discordnotifications-block-user-reason": "với lý do",
+	"discordnotifications-block-user-list": "Danh sách người dùng đang bị cấm",
 	"discordnotifications-summary": "Tóm tắt: $1",
-	"discordnotifications-content": "Nội dung:"
+	"discordnotifications-content": "Nội dung:",
+	"discordnotifications-view-user-rights": "Xem hoặc quản lý quyền người dùng"
 }
