@@ -36,7 +36,7 @@
 	"discordnotifications-summary": "Tóm tắt: $1",
 	"discordnotifications-content": "Nội dung:",
 	"discordnotifications-view-user-rights": "Xem hoặc quản lý quyền người dùng",
-	"discordnotifications-change-user-groups": "%s đã thay đổi nhóm người dùng của $2. Nhóm mới: $3",
+	"discordnotifications-change-user-groups": "%s đã thay đổi nhóm người dùng của %s. Nhóm mới: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 đã thay đổi nhóm người dùng cho $2. Nhóm cũ: $3. Nhóm mới: $4",
 	"discordnotifications-import-complete": "⤵️ Bài viết $1 đã được nhập.",
 	"discordnotifications-moderation-pending": "🔍 $1 đã gửi một bản sửa đổi cho $2 tới [hàng đợi duyệt]($3)."
