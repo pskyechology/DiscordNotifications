@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Markingdots",
+			"Revi",
 			"Suleiman the Magnificent Television",
 			"Ykhwong",
 			"lens0021",
@@ -18,6 +19,7 @@
 	"discordnotifications-delete": "삭제",
 	"discordnotifications-history": "역사",
 	"discordnotifications-diff": "차이",
+	"discordnotifications-preview": "미리 보기",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
 	"discordnotifications-article-saved": "📝 $1 님이 $3 문서를 $2: $4",
 	"discordnotifications-article-saved-minor-edits": "사소하게 편집했습니다",
@@ -25,6 +27,7 @@
 	"discordnotifications-article-created": "📄 $1 님이 $2 문서를 새로 만들었습니다 $3",
 	"discordnotifications-file-namespace": "파일",
 	"discordnotifications-article-deleted": "❌ $1 님이 $2 문서를 삭제했습니다 (이유: $3)",
+	"discordnotifications-article-undeleted": "🔄 $1 님이 $2 문서를 복구했습니다 이유: $3",
 	"discordnotifications-article-moved": "➡ $1 님이 $2 문서를 $3 문서로 이동했습니다 (이유: $4)",
 	"discordnotifications-article-protected": "🔒 $1 님이 $2 문서의 $3 (이유: $4)",
 	"discordnotifications-article-protected-change": "보호 수준을 변경했습니다",
