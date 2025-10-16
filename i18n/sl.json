@@ -15,6 +15,7 @@
 	"discordnotifications-delete": "izbriši",
 	"discordnotifications-history": "zgodovina",
 	"discordnotifications-diff": "prim",
+	"discordnotifications-preview": "predogled",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|zlog|zloga|zlogi|zlogov}}",
 	"discordnotifications-article-saved": "📝 $1 je $2 članka $3 $4",
 	"discordnotifications-article-saved-minor-edits": "je opravil_a manjše urejanje",
@@ -22,6 +23,7 @@
 	"discordnotifications-article-created": "📄 $1 je ustvaril_a članek $2 $3",
 	"discordnotifications-file-namespace": "Datoteka",
 	"discordnotifications-article-deleted": "❌ $1 je izbrisal_a članek $2. Razlog: $3",
+	"discordnotifications-article-undeleted": "❌ $1 je odizbrisal_a članek $2. Razlog: $3",
 	"discordnotifications-article-moved": "➡ $1 je prestavil_a članek $2 na $3. Razlog: $4",
 	"discordnotifications-article-protected": "🔒 $1 je $2 članka $3. Razlog: $4",
 	"discordnotifications-article-protected-change": "je spremenil_a zaščito",
@@ -37,5 +39,6 @@
 	"discordnotifications-view-user-rights": "ogled ali upravljanje uporabniških pravic",
 	"discordnotifications-change-user-groups": "%s je spremenil_a uporabniške skupine za %s. Nove skupine: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 je spremenil_a uporabniške skupine za $2. Stare skupine: $3. Nove skupine: $4.",
-	"discordnotifications-import-complete": "⤵️ Članek $1 je uvožen."
+	"discordnotifications-import-complete": "⤵️ Članek $1 je uvožen.",
+	"discordnotifications-moderation-pending": "🔍 $1 je poslal_a urejanje za $2 v [vrsto za moderiranje] ( $3 )."
 }
